@@ -5,6 +5,5 @@ dist/
 *.db-journal
 *.db-wal
 *.db-shm
-uploads/
 *.log
 .DS_Store

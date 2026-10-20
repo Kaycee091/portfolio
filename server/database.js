@@ -12,6 +12,7 @@ import { Service } from './models/Service.js';
 import { SocialLink } from './models/SocialLink.js';
 import { ContactInfo } from './models/ContactInfo.js';
 import { SiteSettings } from './models/SiteSettings.js';
+import { CV } from './models/CV.js';
 
 dotenv.config();
 
@@ -70,18 +71,18 @@ export async function connectDatabase() {
 
 export async function seedDefaultData() {
   try {
-    // If the database already has existing user data, do not seed placeholders!
     const existingProfile = await Profile.findOne();
     const existingProjects = await Project.countDocuments();
     if (existingProfile || existingProjects > 0) {
       console.log('ℹ️  Existing database records found. Skipping default data seeding.');
       return;
     }
+
     // 1. Admin User
-    const adminEmail = (process.env.ADMIN_EMAIL || 'admin@portfolio.local').toLowerCase().trim();
+    const adminEmail = (process.env.ADMIN_EMAIL || 'asogwakenechukwu284@gmail.com').toLowerCase().trim();
     const adminExists = await AdminUser.findOne({ email: adminEmail });
     if (!adminExists) {
-      const password = process.env.ADMIN_PASSWORD || 'PortfolioAdmin2024!';
+      const password = process.env.ADMIN_PASSWORD || '09160284157';
       const salt = bcrypt.genSaltSync(12);
       const passwordHash = bcrypt.hashSync(password, salt);
       await AdminUser.create({
@@ -96,17 +97,17 @@ export async function seedDefaultData() {
     const profileExists = await Profile.findOne();
     if (!profileExists) {
       await Profile.create({
-        fullName: 'Kenechukwu Asogwa',
+        fullName: 'ASOGWA KENECHUKWU',
         professionalTitle: 'Mobile & Software Developer',
-        location: 'Nigeria',
-        tagline: 'Building digital products that solve real problems.',
-        heroIntro: "Hi, I'm Kenechukwu 👋",
+        location: 'Enugu, Nigeria',
+        tagline: 'Building real-world digital solutions.',
+        heroIntro: "Hi, I'm Kenechukwu 👋. I'm a Software Engineer",
         aboutHeading: 'About Me',
         aboutDescription:
           'Passionate Mobile & Software Developer with hands-on experience building clean, responsive, and performance-driven digital solutions. Experienced in developing cross-platform applications and integrating scalable backend systems.',
         aboutExtra:
           'Currently focusing on creating modern mobile and web solutions with clean architecture, smooth user interactions, and robust data persistence.',
-        profilePicture: null,
+        profilePicture: '/uploads/profile/0266b953-d43c-4d16-931f-1399263b3151.jpeg',
       });
       console.log('✅ Profile seeded');
     }
@@ -118,7 +119,9 @@ export async function seedDefaultData() {
         portfolioTitle: 'Kenechukwu Asogwa | Mobile & Software Developer',
         metaDescription:
           'Professional portfolio of Kenechukwu Asogwa, Mobile & Software Developer based in Nigeria. Building digital products that solve real problems.',
-        accentColor: '#6366f1',
+        browserTitle: 'KC Portfolio',
+        accentColor: '#15144d',
+        themePreference: 'dark',
         footerText: '© 2024 Kenechukwu Asogwa. All rights reserved.',
       });
       console.log('✅ Site settings seeded');
@@ -128,10 +131,10 @@ export async function seedDefaultData() {
     const contactExists = await ContactInfo.findOne();
     if (!contactExists) {
       await ContactInfo.create({
-        email: 'keneasogwa09@gmail.com',
-        whatsapp: '+2348000000000',
+        email: 'asogwakenechukwu284@gmail.com',
+        whatsapp: '+2349160284157',
         location: 'Nigeria',
-        phone: '+2348000000000',
+        phone: '+2349160284157',
       });
       console.log('✅ Contact info seeded');
     }
@@ -140,10 +143,11 @@ export async function seedDefaultData() {
     const socialCount = await SocialLink.countDocuments();
     if (socialCount === 0) {
       await SocialLink.insertMany([
-        { platform: 'GitHub', url: 'https://github.com/kenechukwuasogwa', icon: 'github', isActive: true, displayOrder: 1 },
-        { platform: 'LinkedIn', url: 'https://linkedin.com/in/kenechukwu-asogwa', icon: 'linkedin', isActive: true, displayOrder: 2 },
-        { platform: 'Twitter', url: '', icon: 'twitter', isActive: false, displayOrder: 3 },
-        { platform: 'WhatsApp', url: 'https://wa.me/2348000000000', icon: 'message-circle', isActive: true, displayOrder: 4 },
+        { platform: 'GitHub',   url: 'https://github.com/Kaycee091',                  icon: 'github',         isActive: true,  displayOrder: 1 },
+        { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/asogwakenechukwu/', icon: 'linkedin',       isActive: true,  displayOrder: 2 },
+        { platform: 'WhatsApp', url: 'https://wa.me/2349160284157',                   icon: 'message-circle', isActive: true,  displayOrder: 3 },
+        { platform: 'Twitter',  url: '',                                              icon: 'twitter',        isActive: false, displayOrder: 4 },
+        { platform: 'Email',    url: 'mailto:asogwakenechukwu284@gmail.com',          icon: 'mail',           isActive: true,  displayOrder: 5 },
       ]);
       console.log('✅ Social links seeded');
     }
@@ -152,16 +156,24 @@ export async function seedDefaultData() {
     const skillsCount = await Skill.countDocuments();
     if (skillsCount === 0) {
       await Skill.insertMany([
-        { name: 'Flutter', category: 'Mobile', proficiency: 92, displayOrder: 1 },
-        { name: 'Dart', category: 'Mobile', proficiency: 90, displayOrder: 2 },
-        { name: 'Django', category: 'Backend', proficiency: 82, displayOrder: 3 },
-        { name: 'Node.js', category: 'Backend', proficiency: 85, displayOrder: 4 },
-        { name: 'Express', category: 'Backend', proficiency: 85, displayOrder: 5 },
-        { name: 'React', category: 'Frontend', proficiency: 80, displayOrder: 6 },
-        { name: 'JavaScript', category: 'Frontend', proficiency: 88, displayOrder: 7 },
-        { name: 'Supabase', category: 'Database', proficiency: 85, displayOrder: 8 },
-        { name: 'MongoDB', category: 'Database', proficiency: 88, displayOrder: 9 },
-        { name: 'Git & GitHub', category: 'Tools', proficiency: 90, displayOrder: 10 },
+        { name: 'Flutter',               category: 'Mobile',   isActive: true, displayOrder: 1  },
+        { name: 'Dart',                  category: 'Mobile',   isActive: true, displayOrder: 2  },
+        { name: 'Django',                category: 'Backend',  isActive: true, displayOrder: 3  },
+        { name: 'Django REST Framework', category: 'Backend',  isActive: true, displayOrder: 4  },
+        { name: 'Node.js',               category: 'Backend',  isActive: true, displayOrder: 5  },
+        { name: 'Express',               category: 'Backend',  isActive: true, displayOrder: 6  },
+        { name: 'Python',                category: 'Backend',  isActive: true, displayOrder: 7  },
+        { name: 'React',                 category: 'Frontend', isActive: true, displayOrder: 8  },
+        { name: 'JavaScript',            category: 'Frontend', isActive: true, displayOrder: 9  },
+        { name: 'HTML',                  category: 'Frontend', isActive: true, displayOrder: 10 },
+        { name: 'CSS',                   category: 'Frontend', isActive: true, displayOrder: 11 },
+        { name: 'PostgreSQL',            category: 'Database', isActive: true, displayOrder: 12 },
+        { name: 'SQLite',                category: 'Database', isActive: true, displayOrder: 13 },
+        { name: 'Supabase',              category: 'Database', isActive: true, displayOrder: 14 },
+        { name: 'MongoDB',               category: 'Database', isActive: true, displayOrder: 15 },
+        { name: 'Redis',                 category: 'Database', isActive: true, displayOrder: 16 },
+        { name: 'Git & GitHub',          category: 'Tools',    isActive: true, displayOrder: 17 },
+        { name: 'VS Code',               category: 'Tools',    isActive: true, displayOrder: 18 },
       ]);
       console.log('✅ Skills seeded');
     }
@@ -178,7 +190,7 @@ export async function seedDefaultData() {
           technologies: ['Flutter', 'Dart', 'Django', 'Supabase', 'PostgreSQL'],
           liveUrl: 'https://ellimate.onrender.com',
           githubUrl: 'https://github.com/kenechukwuasogwa/ellimate',
-          image: '/images/ellimate.jpg',
+          image: '/uploads/projects/33febb65-9234-4208-9681-4ef92f4dac6a.png',
           category: 'Mobile',
           featured: true,
           published: true,
@@ -190,9 +202,9 @@ export async function seedDefaultData() {
           description:
             'A social connectivity and real-time messaging application. Features multi-room chat, direct user messaging, presence detection, and automated notifications.',
           technologies: ['React', 'Node.js', 'Express', 'Socket.IO', 'Redis', 'MongoDB'],
-          liveUrl: 'https://connecta.onrender.com',
-          githubUrl: 'https://github.com/kenechukwuasogwa/connecta',
-          image: '/images/connecta.jpg',
+          liveUrl: 'https://connecta-frontend-wlpe.onrender.com',
+          githubUrl: 'https://github.com/Kaycee091/kc-chat',
+          image: '/uploads/projects/447f6800-e77c-4351-a1ac-7bb16f9e330c.png',
           category: 'Web',
           featured: true,
           published: true,
@@ -200,15 +212,15 @@ export async function seedDefaultData() {
         },
         {
           name: 'KC App',
-          tagline: 'Your tasks. Your notes. Organized.',
+          tagline: 'Music App',
           description:
-            'A task and note management utility designed for simplicity and productivity. Features categorized task boards, reminder schedules, markdown notes, and local storage.',
+            'A music app utility designed for simplicity and productivity.',
           technologies: ['Flutter', 'Dart', 'SQLite', 'SharedPreferences'],
-          liveUrl: 'https://kc-app.onrender.com',
-          githubUrl: 'https://github.com/kenechukwuasogwa/kc-app',
-          image: '/images/kc-app.jpg',
+          liveUrl: 'https://kaycee-app.vercel.app',
+          githubUrl: 'https://github.com/Kaycee091/kaycee-app',
+          image: '/uploads/projects/35bf6b81-1c5f-42fa-99f6-776c74c68c39.png',
           category: 'Mobile',
-          featured: false,
+          featured: true,
           published: true,
           displayOrder: 3,
         },
@@ -238,28 +250,51 @@ export async function seedDefaultData() {
           title: 'Mobile App Development',
           description: 'Building cross-platform mobile applications using Flutter and Dart for both iOS and Android.',
           icon: 'smartphone',
+          isActive: true,
           displayOrder: 1,
         },
         {
           title: 'Web Application Development',
           description: 'Designing and developing modern, responsive web applications with clean UI and smooth user experiences.',
           icon: 'monitor',
+          isActive: true,
           displayOrder: 2,
         },
         {
           title: 'Backend Development',
           description: 'Building robust REST APIs and server-side applications using Node.js, Express, and modern backend frameworks.',
           icon: 'server',
+          isActive: true,
           displayOrder: 3,
         },
         {
           title: 'Database Integration',
-          description: 'Designing and integrating reliable database solutions using MongoDB, PostgreSQL, and Supabase.',
+          description: 'Designing and integrating reliable database solutions using MongoDB, PostgreSQL, Supabase, and Redis.',
           icon: 'database',
+          isActive: true,
           displayOrder: 4,
+        },
+        {
+          title: 'Frontend Development',
+          description: 'Designing and developing modern, responsive web applications with clean and intuitive interfaces.',
+          icon: 'layout',
+          isActive: true,
+          displayOrder: 5,
         },
       ]);
       console.log('✅ Services seeded');
+    }
+
+    // 10. CV
+    const cvCount = await CV.countDocuments();
+    if (cvCount === 0) {
+      await CV.create({
+        filePath: '/uploads/cv/01c7c622-132a-4b0e-b4ed-ef84f49ffc3d.pdf',
+        originalName: 'Kenechukwu_Asogwa_CV.pdf',
+        fileSize: 20939,
+        isActive: true,
+      });
+      console.log('✅ CV seeded');
     }
   } catch (err) {
     console.error('Error during data seeding:', err.message);
