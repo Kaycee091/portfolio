@@ -1,0 +1,695 @@
+{
+  "admin_users": {
+    "count": 1,
+    "columns": [
+      "id",
+      "name",
+      "email",
+      "password_hash",
+      "created_at",
+      "updated_at"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "name": "Kenechukwu Asogwa",
+        "email": "admin@portfolio.local",
+        "password_hash": "$2b$12$PSuZwVmBXh6..A6PG3bgu.VztdjA/4rpawJ6kK86eobr1i4COzrMK",
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      }
+    ]
+  },
+  "sqlite_sequence": {
+    "count": 11,
+    "columns": [
+      "name",
+      "seq"
+    ],
+    "rows": [
+      {
+        "name": "admin_users",
+        "seq": 1
+      },
+      {
+        "name": "profile",
+        "seq": 1
+      },
+      {
+        "name": "site_settings",
+        "seq": 1
+      },
+      {
+        "name": "contact_info",
+        "seq": 1
+      },
+      {
+        "name": "social_links",
+        "seq": 5
+      },
+      {
+        "name": "skills",
+        "seq": 17
+      },
+      {
+        "name": "projects",
+        "seq": 3
+      },
+      {
+        "name": "project_technologies",
+        "seq": 18
+      },
+      {
+        "name": "experience",
+        "seq": 1
+      },
+      {
+        "name": "services",
+        "seq": 4
+      },
+      {
+        "name": "contact_messages",
+        "seq": 2
+      }
+    ]
+  },
+  "profile": {
+    "count": 1,
+    "columns": [
+      "id",
+      "full_name",
+      "professional_title",
+      "location",
+      "tagline",
+      "hero_intro",
+      "about_heading",
+      "about_description",
+      "about_extra",
+      "profile_picture",
+      "updated_at"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "full_name": "ASOGWA KENECHUKWU",
+        "professional_title": "Mobile & Software Developer",
+        "location": "Nigeria",
+        "tagline": "Building digital products that solve real problems.",
+        "hero_intro": "Hi, I'm Kenechukwu \ud83d\udc4b",
+        "about_heading": "About Me",
+        "about_description": "I am a passionate Mobile & Software Developer based in Nigeria. I specialize in building digital products that solve real problems \u2014 from mobile applications to web platforms and backend systems.",
+        "about_extra": "",
+        "profile_picture": "/uploads/profile/8697590e-3597-4d19-a443-78fe1c6b8de3.jpeg",
+        "updated_at": "2026-10-07 10:44:06"
+      }
+    ]
+  },
+  "skills": {
+    "count": 16,
+    "columns": [
+      "id",
+      "name",
+      "category",
+      "icon",
+      "display_order",
+      "is_active",
+      "created_at",
+      "updated_at"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "name": "Flutter",
+        "category": "Mobile Development",
+        "icon": null,
+        "display_order": 1,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 2,
+        "name": "Dart",
+        "category": "Mobile Development",
+        "icon": null,
+        "display_order": 2,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 3,
+        "name": "Django",
+        "category": "Backend",
+        "icon": null,
+        "display_order": 3,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 4,
+        "name": "Django REST Framework",
+        "category": "Backend",
+        "icon": null,
+        "display_order": 4,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 5,
+        "name": "Node.js",
+        "category": "Backend",
+        "icon": null,
+        "display_order": 5,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 6,
+        "name": "Python",
+        "category": "Backend",
+        "icon": null,
+        "display_order": 6,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 7,
+        "name": "HTML",
+        "category": "Web Development",
+        "icon": null,
+        "display_order": 7,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 8,
+        "name": "CSS",
+        "category": "Web Development",
+        "icon": null,
+        "display_order": 8,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 9,
+        "name": "JavaScript",
+        "category": "Web Development",
+        "icon": null,
+        "display_order": 9,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 10,
+        "name": "PostgreSQL",
+        "category": "Database",
+        "icon": null,
+        "display_order": 10,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 11,
+        "name": "SQLite",
+        "category": "Database",
+        "icon": null,
+        "display_order": 11,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 12,
+        "name": "Supabase",
+        "category": "Database",
+        "icon": null,
+        "display_order": 12,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 13,
+        "name": "Redis",
+        "category": "Database",
+        "icon": null,
+        "display_order": 13,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 14,
+        "name": "Git",
+        "category": "Tools",
+        "icon": null,
+        "display_order": 14,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 15,
+        "name": "GitHub",
+        "category": "Tools",
+        "icon": null,
+        "display_order": 15,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 16,
+        "name": "VS Code",
+        "category": "Tools",
+        "icon": null,
+        "display_order": 16,
+        "is_active": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      }
+    ]
+  },
+  "projects": {
+    "count": 3,
+    "columns": [
+      "id",
+      "name",
+      "tagline",
+      "description",
+      "category",
+      "main_image",
+      "live_url",
+      "github_url",
+      "other_url",
+      "is_featured",
+      "is_published",
+      "display_order",
+      "created_at",
+      "updated_at"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "name": "ElliMate",
+        "tagline": "Live together. Communicate better.",
+        "description": "ElliMate is a mobile application designed to help roommates and apartment members communicate, coordinate shared responsibilities, manage apartment updates, organize laundry bookings, and stay connected in one place.",
+        "category": "Mobile",
+        "main_image": "/uploads/projects/33febb65-9234-4208-9681-4ef92f4dac6a.png",
+        "live_url": "",
+        "github_url": "",
+        "other_url": "",
+        "is_featured": 1,
+        "is_published": 1,
+        "display_order": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:37:24"
+      },
+      {
+        "id": 2,
+        "name": "Connecta",
+        "tagline": "Student social networking, reimagined.",
+        "description": "Connecta is a social networking web application designed around student communication and interaction.",
+        "category": "Web",
+        "main_image": null,
+        "live_url": "",
+        "github_url": "",
+        "other_url": "",
+        "is_featured": 0,
+        "is_published": 1,
+        "display_order": 2,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 3,
+        "name": "KC App",
+        "tagline": "your best music and streaming app",
+        "description": "KC App is a task and note management application designed to help users organize tasks and personal notes in a simple interface.",
+        "category": "Mobile",
+        "main_image": null,
+        "live_url": "https://kaycee-app.vercel.app",
+        "github_url": "",
+        "other_url": "https://profound-treacle-7cd8c3.netlify.app",
+        "is_featured": 1,
+        "is_published": 1,
+        "display_order": 0,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:35:34"
+      }
+    ]
+  },
+  "project_technologies": {
+    "count": 15,
+    "columns": [
+      "id",
+      "project_id",
+      "name",
+      "display_order"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "project_id": 1,
+        "name": "Flutter",
+        "display_order": 1
+      },
+      {
+        "id": 2,
+        "project_id": 1,
+        "name": "Dart",
+        "display_order": 2
+      },
+      {
+        "id": 3,
+        "project_id": 1,
+        "name": "Supabase",
+        "display_order": 3
+      },
+      {
+        "id": 4,
+        "project_id": 1,
+        "name": "PostgreSQL",
+        "display_order": 4
+      },
+      {
+        "id": 5,
+        "project_id": 2,
+        "name": "Django",
+        "display_order": 1
+      },
+      {
+        "id": 6,
+        "project_id": 2,
+        "name": "Django REST Framework",
+        "display_order": 2
+      },
+      {
+        "id": 7,
+        "project_id": 2,
+        "name": "PostgreSQL",
+        "display_order": 3
+      },
+      {
+        "id": 8,
+        "project_id": 2,
+        "name": "Redis",
+        "display_order": 4
+      },
+      {
+        "id": 9,
+        "project_id": 2,
+        "name": "WebSockets",
+        "display_order": 5
+      },
+      {
+        "id": 10,
+        "project_id": 2,
+        "name": "HTML",
+        "display_order": 6
+      },
+      {
+        "id": 11,
+        "project_id": 2,
+        "name": "CSS",
+        "display_order": 7
+      },
+      {
+        "id": 12,
+        "project_id": 2,
+        "name": "JavaScript",
+        "display_order": 8
+      },
+      {
+        "id": 16,
+        "project_id": 3,
+        "name": "react",
+        "display_order": 1
+      },
+      {
+        "id": 17,
+        "project_id": 3,
+        "name": "node.js",
+        "display_order": 2
+      },
+      {
+        "id": 18,
+        "project_id": 3,
+        "name": "javascript",
+        "display_order": 3
+      }
+    ]
+  },
+  "project_images": {
+    "count": 0,
+    "columns": [
+      "id",
+      "project_id",
+      "file_path",
+      "display_order",
+      "created_at"
+    ],
+    "rows": []
+  },
+  "experience": {
+    "count": 1,
+    "columns": [
+      "id",
+      "organization",
+      "role",
+      "location",
+      "start_date",
+      "end_date",
+      "is_current",
+      "description",
+      "display_order",
+      "created_at",
+      "updated_at"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "organization": "Nanocodes Programming Limited",
+        "role": "Mobile Development Trainee",
+        "location": "Nsukka, Enugu State, Nigeria",
+        "start_date": "",
+        "end_date": "",
+        "is_current": 1,
+        "description": "Mobile app development training and practical software development experience.",
+        "display_order": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      }
+    ]
+  },
+  "services": {
+    "count": 4,
+    "columns": [
+      "id",
+      "title",
+      "description",
+      "icon",
+      "is_active",
+      "display_order",
+      "created_at",
+      "updated_at"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "title": "Mobile App Development",
+        "description": "Building cross-platform mobile applications using Flutter and Dart. From concept to deployment on both iOS and Android.",
+        "icon": "smartphone",
+        "is_active": 1,
+        "display_order": 1,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 2,
+        "title": "Web Application Development",
+        "description": "Designing and developing modern, responsive web applications with clean UI and smooth user experiences.",
+        "icon": "monitor",
+        "is_active": 1,
+        "display_order": 2,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 3,
+        "title": "Backend Development",
+        "description": "Building robust REST APIs and server-side applications using Django, Node.js, and modern backend frameworks.",
+        "icon": "server",
+        "is_active": 1,
+        "display_order": 3,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 4,
+        "title": "Database Integration",
+        "description": "Designing and integrating reliable database solutions using PostgreSQL, SQLite, Supabase, and Redis.",
+        "icon": "database",
+        "is_active": 1,
+        "display_order": 4,
+        "created_at": "2026-10-07 10:10:19",
+        "updated_at": "2026-10-07 10:10:19"
+      }
+    ]
+  },
+  "social_links": {
+    "count": 5,
+    "columns": [
+      "id",
+      "platform",
+      "url",
+      "icon",
+      "is_active",
+      "display_order",
+      "updated_at"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "platform": "GitHub",
+        "url": "",
+        "icon": "github",
+        "is_active": 1,
+        "display_order": 1,
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 2,
+        "platform": "LinkedIn",
+        "url": "",
+        "icon": "linkedin",
+        "is_active": 1,
+        "display_order": 2,
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 3,
+        "platform": "WhatsApp",
+        "url": "",
+        "icon": "whatsapp",
+        "is_active": 1,
+        "display_order": 3,
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 4,
+        "platform": "Email",
+        "url": "",
+        "icon": "email",
+        "is_active": 1,
+        "display_order": 4,
+        "updated_at": "2026-10-07 10:10:19"
+      },
+      {
+        "id": 5,
+        "platform": "Twitter",
+        "url": "",
+        "icon": "twitter",
+        "is_active": 1,
+        "display_order": 5,
+        "updated_at": "2026-10-07 10:10:19"
+      }
+    ]
+  },
+  "contact_info": {
+    "count": 1,
+    "columns": [
+      "id",
+      "email",
+      "whatsapp",
+      "location",
+      "phone",
+      "updated_at"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "email": "",
+        "whatsapp": "",
+        "location": "Nigeria",
+        "phone": "",
+        "updated_at": "2026-10-07 10:10:19"
+      }
+    ]
+  },
+  "cv": {
+    "count": 0,
+    "columns": [
+      "id",
+      "file_path",
+      "original_name",
+      "uploaded_at"
+    ],
+    "rows": []
+  },
+  "contact_messages": {
+    "count": 2,
+    "columns": [
+      "id",
+      "name",
+      "email",
+      "message",
+      "is_read",
+      "created_at"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "name": "Kenechukwu Colleague",
+        "email": "colleague@example.com",
+        "message": "Hello Kenechukwu! Testing the portfolio contact form endpoint.",
+        "is_read": 0,
+        "created_at": "2026-10-07 10:14:35"
+      },
+      {
+        "id": 2,
+        "name": "Sarah Connor",
+        "email": "sarah@example.com",
+        "message": "Hello, looking forward to working with you on our new Flutter app!",
+        "is_read": 0,
+        "created_at": "2026-10-07 10:16:38"
+      }
+    ]
+  },
+  "site_settings": {
+    "count": 1,
+    "columns": [
+      "id",
+      "portfolio_title",
+      "meta_description",
+      "browser_title",
+      "accent_color",
+      "theme_preference",
+      "footer_text",
+      "favicon",
+      "updated_at"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "portfolio_title": "Kenechukwu Asogwa | Mobile & Software Developer",
+        "meta_description": "Professional portfolio of Kenechukwu Asogwa, Mobile & Software Developer based in Nigeria.",
+        "browser_title": "KC Portfolio",
+        "accent_color": "#64bbf2",
+        "theme_preference": "dark",
+        "footer_text": "\u00a9 2024 Kenechukwu Asogwa. All rights reserved.",
+        "favicon": null,
+        "updated_at": "2026-10-07 10:38:41"
+      }
+    ]
+  }
+}

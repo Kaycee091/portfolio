@@ -1,0 +1,405 @@
+{
+  "contactinfos": [
+    {
+      "_id": "6ac62d82655ca2533710e74a",
+      "email": "asogwakenechukwu284@gmail.com",
+      "whatsapp": "+2349160284157",
+      "location": "Nigeria",
+      "phone": "+2349160284157",
+      "createdAt": "2026-10-07T11:31:14.268Z",
+      "updatedAt": "2026-10-07T12:04:19.880Z",
+      "__v": 0
+    }
+  ],
+  "services": [
+    {
+      "_id": "6ac62d84655ca2533710e75d",
+      "title": "Mobile App Development",
+      "description": "Building cross-platform mobile applications using Flutter and Dart for both iOS and Android.",
+      "icon": "smartphone",
+      "displayOrder": 1,
+      "isActive": true,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:16.991Z",
+      "updatedAt": "2026-10-07T11:31:16.991Z"
+    },
+    {
+      "_id": "6ac62d84655ca2533710e75e",
+      "title": "Web Application Development",
+      "description": "Designing and developing modern, responsive web applications with clean UI and smooth user experiences.",
+      "icon": "monitor",
+      "displayOrder": 2,
+      "isActive": true,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:16.991Z",
+      "updatedAt": "2026-10-07T11:31:16.991Z"
+    },
+    {
+      "_id": "6ac62d84655ca2533710e760",
+      "title": "Database Integration",
+      "description": "Designing and integrating reliable database solutions using MongoDB, PostgreSQL, and Supabase.",
+      "icon": "database",
+      "displayOrder": 4,
+      "isActive": true,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:16.991Z",
+      "updatedAt": "2026-10-07T11:31:16.991Z"
+    },
+    {
+      "_id": "6ac62d84655ca2533710e75f",
+      "title": "Backend Development",
+      "description": "Building robust REST APIs and server-side applications using Node.js, Express, and modern backend frameworks.",
+      "icon": "server",
+      "displayOrder": 3,
+      "isActive": true,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:16.991Z",
+      "updatedAt": "2026-10-07T11:31:16.991Z"
+    },
+    {
+      "_id": "6ac63465cd800b5f2d0120d8",
+      "title": "Frontend Development",
+      "description": "Designing and developing modern, responsive web applications",
+      "icon": "smartphone",
+      "displayOrder": 0,
+      "isActive": true,
+      "createdAt": "2026-10-07T12:00:37.816Z",
+      "updatedAt": "2026-10-07T12:00:37.816Z",
+      "__v": 0
+    }
+  ],
+  "experiences": [
+    {
+      "_id": "6ac62d84655ca2533710e75c",
+      "organization": "Nanocodes Programming Limited",
+      "role": "Mobile Development Trainee",
+      "location": "Nsukka, Enugu State, Nigeria",
+      "startDate": "",
+      "endDate": "",
+      "isCurrent": true,
+      "description": "Mobile app development training and practical software development experience.",
+      "displayOrder": 1,
+      "createdAt": "2026-10-07T11:31:16.358Z",
+      "updatedAt": "2026-10-07T11:31:16.358Z",
+      "__v": 0
+    }
+  ],
+  "profiles": [
+    {
+      "_id": "6ac62d81655ca2533710e748",
+      "fullName": "ASOGWA KENECHUKWU",
+      "professionalTitle": "Mobile & Software Developer",
+      "location": "Enugu, Nigeria",
+      "tagline": "Building real-world digital solutions.",
+      "heroIntro": "Hi, I'm Kenechukwu 👋. I'm a Software Engineer",
+      "aboutHeading": "About Me",
+      "aboutDescription": "Passionate Mobile & Software Developer with hands-on experience building clean, responsive, and performance-driven digital solutions. Experienced in developing cross-platform applications and integrating scalable backend systems.",
+      "aboutExtra": "Currently focusing on creating modern mobile and web solutions with clean architecture, smooth user interactions, and robust data persistence.",
+      "profilePicture": "/uploads/profile/0266b953-d43c-4d16-931f-1399263b3151.jpeg",
+      "createdAt": "2026-10-07T11:31:13.363Z",
+      "updatedAt": "2026-10-07T11:42:12.309Z",
+      "__v": 0
+    }
+  ],
+  "adminusers": [
+    {
+      "_id": "6ac62f39f52de39b951f0a43",
+      "name": "Kenechukwu Asogwa",
+      "email": "asogwakenechukwu284@gmail.com",
+      "passwordHash": "$2a$12$.c3nIB0mzhII.Uo1IonFj.HV7L7LgfE5cJY23dyMwJZFIKyigl24.",
+      "createdAt": "2026-10-07T11:38:33.093Z",
+      "updatedAt": "2026-10-07T11:38:33.093Z",
+      "__v": 0
+    }
+  ],
+  "skills": [
+    {
+      "_id": "6ac62d83655ca2533710e750",
+      "name": "Dart",
+      "category": "Mobile",
+      "proficiency": 90,
+      "icon": null,
+      "displayOrder": 2,
+      "isActive": true,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:15.216Z",
+      "updatedAt": "2026-10-07T11:31:15.216Z"
+    },
+    {
+      "_id": "6ac62d83655ca2533710e753",
+      "name": "Express",
+      "category": "Backend",
+      "proficiency": 85,
+      "icon": null,
+      "displayOrder": 5,
+      "isActive": true,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:15.216Z",
+      "updatedAt": "2026-10-07T11:31:15.216Z"
+    },
+    {
+      "_id": "6ac62d83655ca2533710e756",
+      "name": "Supabase",
+      "category": "Database",
+      "proficiency": 85,
+      "icon": null,
+      "displayOrder": 8,
+      "isActive": true,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:15.217Z",
+      "updatedAt": "2026-10-07T11:31:15.217Z"
+    },
+    {
+      "_id": "6ac62d83655ca2533710e751",
+      "name": "Django",
+      "category": "Backend",
+      "proficiency": 82,
+      "icon": null,
+      "displayOrder": 3,
+      "isActive": true,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:15.216Z",
+      "updatedAt": "2026-10-07T11:31:15.216Z"
+    },
+    {
+      "_id": "6ac62d83655ca2533710e752",
+      "name": "Node.js",
+      "category": "Backend",
+      "proficiency": 85,
+      "icon": null,
+      "displayOrder": 4,
+      "isActive": true,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:15.216Z",
+      "updatedAt": "2026-10-07T11:31:15.216Z"
+    },
+    {
+      "_id": "6ac62d83655ca2533710e755",
+      "name": "JavaScript",
+      "category": "Frontend",
+      "proficiency": 88,
+      "icon": null,
+      "displayOrder": 7,
+      "isActive": true,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:15.217Z",
+      "updatedAt": "2026-10-07T11:31:15.217Z"
+    },
+    {
+      "_id": "6ac62d83655ca2533710e758",
+      "name": "Git & GitHub",
+      "category": "Tools",
+      "proficiency": 90,
+      "icon": null,
+      "displayOrder": 10,
+      "isActive": true,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:15.217Z",
+      "updatedAt": "2026-10-07T11:31:15.217Z"
+    },
+    {
+      "_id": "6ac62d83655ca2533710e74f",
+      "name": "Flutter",
+      "category": "Mobile",
+      "proficiency": 92,
+      "icon": null,
+      "displayOrder": 1,
+      "isActive": true,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:15.215Z",
+      "updatedAt": "2026-10-07T11:31:15.215Z"
+    },
+    {
+      "_id": "6ac62d83655ca2533710e754",
+      "name": "React",
+      "category": "Frontend",
+      "proficiency": 80,
+      "icon": null,
+      "displayOrder": 6,
+      "isActive": true,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:15.216Z",
+      "updatedAt": "2026-10-07T11:31:15.216Z"
+    },
+    {
+      "_id": "6ac62d83655ca2533710e757",
+      "name": "MongoDB",
+      "category": "Database",
+      "proficiency": 88,
+      "icon": null,
+      "displayOrder": 9,
+      "isActive": true,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:15.217Z",
+      "updatedAt": "2026-10-07T11:31:15.217Z"
+    }
+  ],
+  "sitesettings": [
+    {
+      "_id": "6ac62d81655ca2533710e749",
+      "portfolioTitle": "Kenechukwu Asogwa | Mobile & Software Developer",
+      "metaDescription": "Professional portfolio of Kenechukwu Asogwa, Mobile & Software Developer based in Nigeria. Building digital products that solve real problems.",
+      "accentColor": "#15144d",
+      "footerText": "© 2024 Kenechukwu Asogwa. All rights reserved.",
+      "analyticsId": "",
+      "createdAt": "2026-10-07T11:31:13.976Z",
+      "updatedAt": "2026-10-07T12:19:45.667Z",
+      "__v": 0
+    }
+  ],
+  "sociallinks": [
+    {
+      "_id": "6ac62d82655ca2533710e74c",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/asogwakenechukwu/",
+      "icon": "linkedin",
+      "isActive": true,
+      "displayOrder": 2,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:14.587Z",
+      "updatedAt": "2026-10-07T12:02:07.995Z"
+    },
+    {
+      "_id": "6ac62d82655ca2533710e74b",
+      "platform": "GitHub",
+      "url": "https://github.com/Kaycee091",
+      "icon": "github",
+      "isActive": true,
+      "displayOrder": 1,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:14.586Z",
+      "updatedAt": "2026-10-07T12:02:07.850Z"
+    },
+    {
+      "_id": "6ac62d82655ca2533710e74d",
+      "platform": "Twitter",
+      "url": "",
+      "icon": "twitter",
+      "isActive": false,
+      "displayOrder": 3,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:14.587Z",
+      "updatedAt": "2026-10-07T12:02:08.152Z"
+    },
+    {
+      "_id": "6ac62d82655ca2533710e74e",
+      "platform": "WhatsApp",
+      "url": "https://wa.me/2349160284157",
+      "icon": "message-circle",
+      "isActive": true,
+      "displayOrder": 4,
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:14.587Z",
+      "updatedAt": "2026-10-07T12:02:08.291Z"
+    }
+  ],
+  "projects": [
+    {
+      "_id": "6ac62d84655ca2533710e75b",
+      "name": "KC App",
+      "tagline": "Music App",
+      "description": "A music app utility designed for simplicity and productivity.",
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "SQLite",
+        "SharedPreferences"
+      ],
+      "liveUrl": "https://kaycee-app.vercel.app",
+      "githubUrl": "https://github.com/Kaycee091/kaycee-app",
+      "image": "/uploads/projects/35bf6b81-1c5f-42fa-99f6-776c74c68c39.png",
+      "screenshots": [],
+      "featured": true,
+      "published": true,
+      "displayOrder": 3,
+      "category": "Mobile",
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:16.011Z",
+      "updatedAt": "2026-10-07T11:55:33.637Z"
+    },
+    {
+      "_id": "6ac62d84655ca2533710e75a",
+      "name": "Connecta",
+      "tagline": "Stay connected. Anywhere.",
+      "description": "A social connectivity and real-time messaging application. Features multi-room chat, direct user messaging, presence detection, and automated notifications.",
+      "technologies": [
+        "React",
+        "Node.js",
+        "Express",
+        "Socket.IO",
+        "Redis",
+        "MongoDB"
+      ],
+      "liveUrl": "https://connecta-frontend-wlpe.onrender.com",
+      "githubUrl": "https://github.com/Kaycee091/kc-chat",
+      "image": "/uploads/projects/447f6800-e77c-4351-a1ac-7bb16f9e330c.png",
+      "screenshots": [],
+      "featured": true,
+      "published": true,
+      "displayOrder": 2,
+      "category": "Web",
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:16.010Z",
+      "updatedAt": "2026-10-07T11:54:03.837Z"
+    },
+    {
+      "_id": "6ac62d83655ca2533710e759",
+      "name": "ElliMate",
+      "tagline": "Live together. Communicate better.",
+      "description": "A comprehensive roommate-finding and off-campus accommodation platform. Enables university students to discover verified off-campus apartments, match with compatible roommates based on lifestyle habits, and manage shared house expenses.",
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Django",
+        "Supabase",
+        "PostgreSQL"
+      ],
+      "liveUrl": "https://ellimate.onrender.com",
+      "githubUrl": "https://github.com/kenechukwuasogwa/ellimate",
+      "image": "/images/ellimate.jpg",
+      "screenshots": [],
+      "featured": true,
+      "published": true,
+      "displayOrder": 1,
+      "category": "Mobile",
+      "__v": 0,
+      "createdAt": "2026-10-07T11:31:16.006Z",
+      "updatedAt": "2026-10-07T11:31:16.006Z"
+    }
+  ],
+  "cvs": [
+    {
+      "_id": "6ac6301ccd800b5f2d0120d7",
+      "filePath": "/uploads/cv/01c7c622-132a-4b0e-b4ed-ef84f49ffc3d.pdf",
+      "originalName": "Kenechukwu_Asogwa_CV(2).pdf",
+      "fileSize": 20939,
+      "isActive": true,
+      "uploadedAt": "2026-10-07T11:42:20.511Z",
+      "createdAt": "2026-10-07T11:42:20.512Z",
+      "updatedAt": "2026-10-07T11:42:20.512Z",
+      "__v": 0
+    }
+  ],
+  "contactmessages": [
+    {
+      "_id": "6ac63585cd800b5f2d0120d9",
+      "name": "chiboy",
+      "email": "kenechukwuasogwa284@gmail.com",
+      "message": "Hi, i want to know more about your project",
+      "isRead": true,
+      "createdAt": "2026-10-07T12:05:25.988Z",
+      "updatedAt": "2026-10-07T12:05:38.547Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ac644c7e95e812687a93417",
+      "name": "Izuchukwu Godswill",
+      "email": "inspire.57@gmail.com",
+      "message": "W3ETRYUIOKKJHGFDS345678UOIK",
+      "isRead": false,
+      "createdAt": "2026-10-07T13:10:31.919Z",
+      "updatedAt": "2026-10-07T13:10:31.919Z",
+      "__v": 0
+    }
+  ]
+}
